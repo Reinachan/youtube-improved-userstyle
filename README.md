@@ -7,7 +7,7 @@ This is a collection of userstyles for YouTube that I've made.
 ### YouTube Improved
 This is the primary userstyle. Its major changes are reduced border-radiuses on various elements and made some changes to how videos are previewed on the homepage. It also changes how descriptions look and adds in chapter overview without expanding the description.
 
-Install from [GitHub](https://github.com/Reinachan/youtube-improved-userstyle/raw/main/youtube-improved.user.css) or from [UserStyles.world](https://userstyles.world/user/reinachan)
+Install from [GitHub](https://github.com/Reinachan/youtube-improved-userstyle/raw/main/youtube-improved.user.css) or from [UserStyles.world](https://userstyles.world/style/9892/youtube-improved)
 
 ![image](https://github.com/Reinachan/youtube-improved-userstyle/assets/16106839/47862f5d-e105-4878-8bff-641bfed325af)
 
