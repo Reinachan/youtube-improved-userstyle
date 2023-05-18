@@ -1,0 +1,153 @@
+/* ==UserStyle==
+@name           YouTube Improved
+@namespace      userstyles.world/user/reinachan
+@version        1.0.0
+@description    Improves YouTube's interface to my tastes
+@author         Reinachan
+@preprocessor   less
+==/UserStyle== */
+@-moz-document domain("youtube.com") {
+  /* Insert code here... */
+  :root {
+    --br: 5px;
+    --yt-img-border-radius: var(--br) var(--br) 2px 2px;
+    --paper-item-focused-before-border-radius: var(--br);
+    
+    /* Notifications */
+    &[darker-dark-theme] {
+      --paper-menu-background-color: #1c1c1c;
+    }
+  }
+  
+  /* Notifications */
+  ytd-multi-page-menu-renderer[darker-dark-theme] {
+    background: var(--paper-menu-background-color);
+  }
+
+  /* video previews */
+  ytd-rich-item-renderer {
+    margin-bottom: 17px;
+  }
+  
+  ytd-rich-item-renderer:not([is-slim-grid]) {
+    border-radius: var(--br);
+    
+    #details.ytd-rich-grid-media {
+      padding: 0 0 8px 0;
+    }
+    
+    #details.ytd-rich-grid-media {
+      display: grid;
+      grid-template-columns: 40px 1fr max-content;
+      grid-template-rows: auto;
+      column-gap: 5px;
+      
+      #avatar-link {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0;
+        justify-self: center;
+        align-self: center;
+      }
+
+      #menu {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      #meta {
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 2;
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
+        width: 100%;
+        padding: 0;
+        > h3 {
+          grid-row: 1 / span 1;
+          grid-column: 1 / span 2;
+          align-self: center;
+          margin: 8px 0 8px 2px;
+        }
+
+        ytd-video-meta-block {
+          grid-row: 2;
+          grid-column: 2 / span 3;
+          align-self: center;   
+        }
+
+        #buttons {
+          grid-row: 1 / 1;
+          grid-column: 4 / 4;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  ytd-thumbnail[size="large"] a.ytd-thumbnail,
+  ytd-thumbnail[size="large"]::before,
+  {
+    border-radius: var(--yt-img-border-radius);
+  }
+
+  ytd-thumbnail[size="medium"] a.ytd-thumbnail,
+  ytd-thumbnail[size="medium"]::before,
+  {
+    border-radius: 2px;
+    --yt-img-border-radius: 2px;
+  }
+
+  yt-chip-cloud-chip-renderer[modern-chips][chip-style] {
+    border-radius: var(--br);
+  } //
+  ytd-searchbox[desktop-searchbar-style="rounded_corner_borders_light_btn"] #container.ytd-searchbox,
+  ytd-searchbox[desktop-searchbar-style="rounded_corner_autofocus"] #container.ytd-searchbox {
+    border-radius: var(--br) 0 0 var(--br);
+  }
+
+  ytd-searchbox[desktop-searchbar-style="rounded_corner_borders_light_btn"] #search-icon-legacy.ytd-searchbox,
+  ytd-searchbox[desktop-searchbar-style="rounded_corner_autofocus"] #search-icon-legacy.ytd-searchbox {
+    border-radius: 0 var(--br) var(--br) 0;
+  } 
+  
+  /* Menubar */
+  ytd-guide-entry-renderer[guide-refresh] tp-yt-paper-item.ytd-guide-entry-renderer {
+    --paper-item-focused-before-border-radius: var(--br);
+  }
+
+  ytd-guide-entry-renderer[guide-refresh] {
+    border-radius: var(--paper-item-focused-before-border-radius);
+  }
+  
+  /* search results */
+  .sbsb_a {
+    background: var(--paper-menu-background-color);
+    
+    li, b, span {
+      color: #ebebeb;
+      
+      ::before {
+        filter: invert();
+      }
+    }
+  }
+  
+  .sbdd_b {
+    border-color: #111;
+    border-top-color: currentColor;
+  }
+  
+  .sbfl_b {
+    background: transparent;
+  }
+  
+  .sbfl_a:hover {
+    color: #999;
+  }
+  
+  /* hover */
+  .sbsb_d {
+    background: #333;
+  }
+}
