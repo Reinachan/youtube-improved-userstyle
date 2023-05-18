@@ -14,7 +14,7 @@ Install from [GitHub](https://github.com/Reinachan/youtube-improved-userstyle/ra
 ### Shorts Improved
 This removes the ability to scroll through shorts to prevent doom-scrolling. It also moves the interface away from the video.
 
-Install from [GitHub]() or from [UserStyles.world](https://userstyles.world/user/reinachan).
+Install from [GitHub](https://github.com/Reinachan/youtube-improved-userstyle/raw/main/shorts-improved.user.css) or from [UserStyles.world](https://userstyles.world/user/reinachan).
 
 ![image](https://github.com/Reinachan/youtube-improved-userstyle/assets/16106839/c8ce0a54-befb-4aa6-b9e9-164283a375c9)
 
