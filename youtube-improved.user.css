@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           YouTube Improved
 @namespace      https://github.com/Reinachan
-@version        1.0.0
+@version        1.0.1
 @description    Improves YouTube's interface to my tastes
 @author         Reinachan
 @preprocessor   less
+@homepageURL    https://github.com/Reinachan/youtube-improved-userstyle
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-  /* Insert code here... */
   :root {
     --br: 5px;
     --yt-img-border-radius: var(--br) var(--br) 2px 2px;
