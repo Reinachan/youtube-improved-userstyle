@@ -11,10 +11,10 @@ Install from [GitHub](https://github.com/Reinachan/youtube-improved-userstyle/ra
 
 ![image](https://github.com/Reinachan/youtube-improved-userstyle/assets/16106839/47862f5d-e105-4878-8bff-641bfed325af)
 
-### Shorts Improved
+### Focused YouTube Shorts
 This removes the ability to scroll through shorts to prevent doom-scrolling. It also moves the interface away from the video.
 
-Install from [GitHub](https://github.com/Reinachan/youtube-improved-userstyle/raw/main/shorts-improved.user.css) or from [UserStyles.world](https://userstyles.world/user/reinachan).
+Install from [GitHub](https://github.com/Reinachan/youtube-improved-userstyle/raw/main/shorts-improved.user.css) or from [UserStyles.world](https://userstyles.world/style/9893/focused-youtube-shorts).
 
 ![image](https://github.com/Reinachan/youtube-improved-userstyle/assets/16106839/c8ce0a54-befb-4aa6-b9e9-164283a375c9)
 
