@@ -5,6 +5,7 @@
 @description    Makes it impossible to scroll through shorts + visual tweaks
 @author         Reinachan
 @preprocessor   less
+@homepageURL    https://github.com/Reinachan/youtube-improved-userstyle
 ==/UserStyle== */
 
 @-moz-document regexp(".*?youtube.com\\/shorts.*") {
