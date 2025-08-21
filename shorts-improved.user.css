@@ -1,37 +1,38 @@
 /* ==UserStyle==
 @name           Focused YouTube Shorts
 @namespace      https://github.com/Reinachan
-@version        1.0.1
+@version        1.0.0
 @description    Makes it impossible to scroll through shorts + visual tweaks
 @author         Reinachan
 @preprocessor   less
-@homepageURL    https://github.com/Reinachan/youtube-improved-userstyle
-@license        AGPL-3.0-or-later
 ==/UserStyle== */
-
 @-moz-document regexp(".*?youtube.com\\/shorts.*") {
-  
   /* Makes it impossible to scroll to other videos */
   ytd-shorts #shorts-container.ytd-shorts {
-    overflow-y: clip;
-    transform: translateY(-20px);
+    overflow-y: clip !important;
   }
-  
+
   /* Hides the videos under the playing video */
   ytd-reel-video-renderer {
-    display: none;
-    
+    display: none !important;
     &:first-of-type {
-      display: flex;
+      display: block !important;
     }
   }
-  
+
+  .reel-video-in-sequence-new {
+    display: none;
+    &:has(ytd-reel-video-renderer) {
+      display: block !important;
+    }
+  }
+
   /* Moves the title and the channel stuff further down
      and also adds a gradient background under the title. */
+  /* This no longer does anything, but I'll keep it here just in case I want to modify it to fix it later */
   ytd-reel-player-header-renderer {
     transform: translateY(65px);
     padding-inline: 0;
-    
     & .title {
       padding-bottom: 10px;
       padding-top: 10px;
@@ -39,24 +40,24 @@
       background-image: linear-gradient(to top, #000, #0000);
       transform: translateY(3px);
     }
-    
+
     & #channel-container {
       transform: translateY(5px);
       padding-inline: 5px;
     }
   }
-  
+
   ytd-reel-video-renderer[modern] .overlay.ytd-reel-video-renderer {
     overflow: initial;
   }
+
   ytd-reel-player-overlay-renderer #overlay.ytd-reel-player-overlay-renderer {
     overflow: initial;
-    
     /* Changes border radius of the bottom of the video.
        This is done so the progressbar doesn't look out-of-place */
     border-radius: 0;
   }
-  
+
   /* Changes the border radius of top of the video */
   .player-container.ytd-reel-video-renderer {
     border-radius: 5px;
